@@ -78,7 +78,7 @@ const links = [
   {
     text: "My CV (updated 10 January 2024)",
     url: "https://drive.google.com/file/d/1OhAsNJhTFc-omkgsXJHgEh0Bl4mGQGns/view?usp=sharing",
-    isExternal: true, // Flag to indicate an external link
+    isExternal: true, 
     description: "My updated CV",
   },
   {

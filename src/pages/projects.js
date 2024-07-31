@@ -7,8 +7,8 @@ const pageStyles = {
   padding: "5rem",
   fontFamily: "'Helvetica Neue', Helvetica, Arial, sans-serif",
   lineHeight: "1.6",
-  fontSize: "1.25rem"
-//   backgroundColor: "#fff",
+  fontSize: "1.25rem",
+  backgroundColor: "#fff",
 }
 
 // Define your heading styles here
@@ -18,7 +18,6 @@ const headingStyles = {
   marginBottom: "2rem",
 }
 
-// Define your list styles here
 const listStyles = {
   listStyle: "none",
   paddingLeft: 0,

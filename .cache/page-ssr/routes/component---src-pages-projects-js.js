@@ -1,18 +1,18 @@
 "use strict";
-exports.id = 853;
-exports.ids = [853];
+exports.id = 429;
+exports.ids = [429];
 exports.modules = {
 
-/***/ 7219:
+/***/ 3049:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(216);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7865);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7076);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(123);
 // Define your page styles here
 const pageStyles={color:"#232129",padding:"5rem",fontFamily:"'Helvetica Neue', Helvetica, Arial, sans-serif",lineHeight:"1.6",fontSize:"1.25rem"//   backgroundColor: "#fff",
 };// Define your heading styles here

@@ -1,9 +1,9 @@
 "use strict";
-exports.id = 678;
-exports.ids = [678];
+exports.id = 293;
+exports.ids = [293];
 exports.modules = {
 
-/***/ 4406:
+/***/ 2415:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 // ESM COMPAT FLAG
@@ -16,10 +16,10 @@ __webpack_require__.d(__webpack_exports__, {
 });
 
 // EXTERNAL MODULE: external "/Users/wesleysimeontan/wesley-tan.github.io/node_modules/react/index.js"
-var index_js_ = __webpack_require__(216);
+var index_js_ = __webpack_require__(7865);
 var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
 // EXTERNAL MODULE: ./.cache/gatsby-browser-entry.js + 11 modules
-var gatsby_browser_entry = __webpack_require__(7076);
+var gatsby_browser_entry = __webpack_require__(123);
 ;// CONCATENATED MODULE: ./src/images/wesley-tan-logo.png
 /* harmony default export */ const wesley_tan_logo = ("/static/wesley-tan-logo-8e793650e8b7fb6b733bf01f6ca49a5d.png");
 ;// CONCATENATED MODULE: ./src/pages/index.js
