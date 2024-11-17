@@ -14,11 +14,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(123);
 // Define your page styles here
-const pageStyles={color:"#232129",padding:"5rem",fontFamily:"'Helvetica Neue', Helvetica, Arial, sans-serif",lineHeight:"1.6",fontSize:"1.25rem"//   backgroundColor: "#fff",
-};// Define your heading styles here
+const pageStyles={color:"#232129",padding:"5rem",fontFamily:"'Helvetica Neue', Helvetica, Arial, sans-serif",lineHeight:"1.6",fontSize:"1.25rem",backgroundColor:"#fff"};// Define your heading styles here
 const headingStyles={borderBottom:"2px solid #232129",// Add a subtle bottom border to the headings
-paddingBottom:"0.5rem",marginBottom:"2rem"};// Define your list styles here
-const listStyles={listStyle:"none",paddingLeft:0};const listItemStyles={marginBottom:"1.5rem",fontSize:"1.25rem"};// Define your link styles here
+paddingBottom:"0.5rem",marginBottom:"2rem"};const listStyles={listStyle:"none",paddingLeft:0};const listItemStyles={marginBottom:"1.5rem",fontSize:"1.25rem"};// Define your link styles here
 const linkStyle={color:"#663399",textDecoration:"none",fontWeight:"bold"};const projectTitleStyle={...linkStyle,display:"inline-block",// This makes the link end where the text ends
 marginRight:"0.5rem"// Adds a small space between the title and the description
 };const projectDescriptionStyle={display:"block"// This will make the description start on a new line
