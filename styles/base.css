@@ -88,8 +88,18 @@ img {
 
 /* Focus States */
 :focus {
-    outline: 2px solid var(--secondary-color);
+    outline: none;
+}
+
+/* Ensure accessibility - provide alternative focus styles */
+:focus-visible {
+    outline: 2px solid var(--primary-color);
     outline-offset: 2px;
+}
+
+/* Remove focus styles for mouse users while maintaining keyboard accessibility */
+:focus:not(:focus-visible) {
+    outline: none;
 }
 
 /* Selection */
