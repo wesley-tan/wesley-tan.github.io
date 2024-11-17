@@ -203,6 +203,41 @@
     .experience-header {
         align-items: flex-start;
     }
+
+    .grid-container,
+    .content-grid,
+    .project-grid,
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .section-container > * + * {
+        margin-top: var(--spacing-xl);
+    }
+    
+    .experience-items {
+        margin-top: var(--spacing-lg);
+    }
+
+    .expertise-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .expertise-category h2 {
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .expertise-item {
+        padding: var(--spacing-sm);
+    }
+    
+    .expertise-description {
+        margin-top: var(--spacing-md);
+        padding: var(--spacing-sm);
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
