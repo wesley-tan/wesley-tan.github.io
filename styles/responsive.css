@@ -141,4 +141,72 @@
         width: 100%;
         text-align: center;
     }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .project-card {
+        padding: var(--spacing-md);
+    }
+    
+    .project-content h2 {
+        font-size: var(--font-size-lg);
+    }
+    
+    .project-content p {
+        font-size: var(--font-size-base);
+    }
+    
+    .project-tags span {
+        font-size: var(--font-size-sm);
+        padding: 0.3rem 0.8rem;
+    }
+
+    .contact-link {
+        padding: var(--spacing-sm);
+    }
+    
+    .icon-wrapper {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .icon-wrapper img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .link-content h3 {
+        font-size: var(--font-size-sm);
+    }
+    
+    .link-content span {
+        font-size: var(--font-size-xs);
+    }
+
+    .experience-item {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+    
+    .company-logo-wrapper {
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .experience-content {
+        width: 100%;
+    }
+    
+    .experience-header {
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 } 
