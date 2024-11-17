@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile Menu Toggle
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('#nav-links');
-    const body = document.querySelector('body');
+    const body = document.body;
 
     if (hamburger && navLinks) {
         hamburger.addEventListener('click', function() {
@@ -103,7 +103,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Close menu when clicking outside
         document.addEventListener('click', (e) => {
-            if (!hamburger.contains(e.target) && !navLinks.contains(e.target) && navLinks.classList.contains('show')) {
+            if (navLinks.classList.contains('show') && 
+                !navLinks.contains(e.target) && 
+                !hamburger.contains(e.target)) {
                 hamburger.classList.remove('active');
                 navLinks.classList.remove('show');
                 body.style.overflow = 'auto';

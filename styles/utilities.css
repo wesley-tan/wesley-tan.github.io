@@ -1,0 +1,43 @@
+/* Flex Utilities */
+.flex {
+    display: flex;
+  }
+  
+  .flex-col {
+    flex-direction: column;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  /* Grid Utilities */
+  .grid {
+    display: grid;
+  }
+  
+  /* Spacing Utilities */
+  .gap-sm { gap: var(--spacing-sm); }
+  .gap-md { gap: var(--spacing-md); }
+  .gap-lg { gap: var(--spacing-lg); }
+  
+  /* Common Components */
+  .card {
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow);
+  }
+  
+  .tag {
+    background: var(--background);
+    color: var(--primary-color);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+  }
