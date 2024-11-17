@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -19,29 +19,70 @@
             <li><a href="about.html">About Me</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="career.html">Career</a></li>
-            <li><a href="blog.html">Blog</a></li>
             <li><a href="mentorship.html">Mentorship</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     
-    
-    <section class="contact-section">
-        <div class="content" data-animate="fade-in">
-            <h1>Contact Me</h1>
-            <div class="contact-details">
-                <div class="contact-info">
-                    <ul>
-                        <li>
-                            <img src="email.png" alt="Email Icon">
-                            <a href="mailto:wesleysimeontan@gmail.com">wesleysimeontan@gmail.com</a>
-                        </li>
-                        <li>
-                            <img src="linkedin.png" alt="LinkedIn Icon">
-                            <a href="https://www.linkedin.com/wesley-tan" target="_blank">Wesley Tan</a>
-                        </li>
-                    </ul>
+    <section class="section-container">
+        <header class="profile-header" data-animate="fade-in">
+            <div class="profile-info">
+                <div class="profile-text">
+                    <h1>Get in Touch</h1>
+                    <p class="subtitle">Let's connect and explore opportunities to work together</p>
                 </div>
+            </div>
+        </header>
+        
+        <div class="contact-grid" data-animate="fade-in">
+            <div class="contact-form-wrapper">
+                <h2>Send Me a Message</h2>
+                <form class="contact-form" action="https://formspree.io/f/wesleysimeontan@gmail.com" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info-wrapper">
+                <h2>Connect With Me</h2>
+                <div class="social-links">
+                    <a href="mailto:wesleysimeontan@gmail.com" class="social-link">
+                        <img src="images/email.png" alt="Email">
+                        <span>wesleysimeontan@gmail.com</span>
+                    </a>
+                    <a href="https://linkedin.com/in/wesleysimeontan" target="_blank" class="social-link">
+                        <img src="images/linkedin.png" alt="LinkedIn">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/wesley-tan" target="_blank" class="social-link">
+                        <img src="images/github.png" alt="GitHub">
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://wa.me/18602628267" target="_blank" class="social-link">
+                        <img src="images/whatsapp.png" alt="WhatsApp">
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+
             </div>
         </div>
     </section>

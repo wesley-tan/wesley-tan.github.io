@@ -54,21 +54,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Intersection Observer for fade-in animations
     const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        threshold: 0.1
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
             }
         });
     }, observerOptions);
 
     // Observe all elements with data-animate attribute
-    document.querySelectorAll('[data-animate="fade-in"]').forEach((element) => {
+    document.querySelectorAll('[data-animate]').forEach(element => {
         observer.observe(element);
     });
 

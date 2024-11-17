@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Wesley Tan</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -19,33 +19,65 @@
             <li><a href="about.html">About Me</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="career.html">Career</a></li>
-            <li><a href="blog.html">Blog</a></li>
             <li><a href="mentorship.html">Mentorship</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
     
-    <section class="programs-section">
-        <div class="content" data-animate="fade-in">
-            <h1>Featured Projects</h1>
-            <p>A collection of my notable projects spanning entrepreneurship, mobile development, browser extensions, and blockchain technology.</p>
-        </div>
-        <div class="partnerships" data-animate="fade-in">
-            <div class="partnership-item">
-                <img src="images/wes-entrepreneurs.png" alt="Wesleyan Entrepreneurs">
-                <p>Wesleyan Entrepreneurs<br>Founded and led Wesleyan's premier entrepreneurship club, fostering innovation and startup culture on campus.</p>
+    <section class="section-container">
+        <header class="profile-header" data-animate="fade-in">
+            <div class="profile-info">
+                <div class="profile-text">
+                    <h1>Featured Projects</h1>
+                    <p class="subtitle">Building innovative solutions across web, mobile, and blockchain technologies</p>
+                </div>
             </div>
-            <div class="partnership-item">
-                <img src="overlay-app.jpg" alt="OverlayApp">
-                <p>OverlayApp<br>Android application designed to enhance user privacy by blocking the status bar, preventing sensitive information exposure.</p>
+        </header>
+        
+        <div class="project-grid" data-animate="fade-in">
+            <div class="project-card">
+                <div class="project-content">
+                    <h2>Wesleyan Entrepreneurs</h2>
+                    <p>Founded and led Wesleyan's premier entrepreneurship club, fostering innovation and startup culture on campus.</p>
+                    <div class="project-tags">
+                        <span>Leadership</span>
+                        <span>Entrepreneurship</span>
+                    </div>
+                    <a href="https://github.com/wesley-tan/wes-entrepreneurs-website" target="_blank" class="project-link">
+                        <img src="images/link.png" alt="View Project">
+                        <span>View Project</span>
+                    </a>
+                </div>
             </div>
-            <div class="partnership-item">
-                <img src="fingerprint-checker.jpg" alt="Fingerprint Checker">
-                <p>Fingerprint Checker<br>Firefox browser extension for enhanced security, helping users verify website authenticity and prevent phishing attacks.</p>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h2>OverlayApp</h2>
+                    <p>Android application designed to enhance user privacy by blocking the status bar, preventing sensitive information exposure.</p>
+                    <div class="project-tags">
+                        <span>Android</span>
+                        <span>Privacy</span>
+                    </div>
+                    <a href="https://github.com/wesley-tan/overlay-app" target="_blank" class="project-link">
+                        <img src="images/link.png" alt="View Project">
+                        <span>View Project</span>
+                    </a>
+                </div>
             </div>
-            <div class="partnership-item">
-                <img src="stakehub.jpg" alt="StakeHub">
-                <p>StakeHub<br>Developed an on-chain oracle for the Hyperliquid LST protocol, improving decentralized finance infrastructure.</p>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h2>Fingerprint Checker</h2>
+                    <p>Firefox browser extension for enhanced security, helping users verify website authenticity and prevent phishing attacks.</p>
+                    <div class="project-tags">
+                        <span>Firefox</span>
+                        <span>Security</span>
+                    </div>
+                    <a href="https://github.com/wesley-tan/fingerprint-checker" target="_blank" class="project-link">
+                        <img src="images/link.png" alt="View Project">
+                        <span>View Project</span>
+                    </a>
+                </div>
             </div>
         </div>
     </section>

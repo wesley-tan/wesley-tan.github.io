@@ -63,3 +63,5 @@ Email and Social Media:
 Links to LinkedIn, GitHub, YouTube (for piano covers), and TikTok (economics series).
 Newsletter Signup:
 Offer updates on blog posts or educational resources.
+
+ok help me organize the css

@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wesley Tan's career journey in software engineering and research">
     <title>Career - Wesley Tan</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
@@ -19,75 +20,89 @@
             <li><a href="about.html">About Me</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="career.html">Career</a></li>
-            <li><a href="blog.html">Blog</a></li>
             <li><a href="mentorship.html">Mentorship</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <section class="career-section">
-        <div class="content" data-animate="fade-in">
-            <h1>Career Journey</h1>
-            
-            <div class="education-section">
-                <h2>Education</h2>
-                <div class="education-item">
-                    <h3>Dartmouth College</h3>
-                    <p class="subtitle">Bachelor of Engineering, Computer Engineering</p>
-                    <p class="details">GPA: 4.00/4.00 | Expected Mar 2027</p>
-                    <ul>
-                        <li>Software Engineer, Dartmouth Tech Consulting Group</li>
-                        <li>Core Team, Dartmouth Blockchain</li>
-                        <li>Key Courses: Software Design & Implementation, Systems, Machine Learning, AI</li>
-                    </ul>
-                </div>
-
-                <div class="education-item">
-                    <h3>Wesleyan University</h3>
-                    <p class="subtitle">Bachelor of Arts, Computer Science & Mathematics</p>
-                    <p class="details">GPA: 4.00/4.00 | Expected May 2026</p>
-                    <ul>
-                        <li>Freeman Asian Scholarship Recipient (Full Merit)</li>
-                        <li>Member: Wes_Code, Consulting Pathways, Investment Group</li>
-                        <li>Key Courses: Design of Programming Languages, Computer Networks, Discrete Mathematics</li>
-                    </ul>
+    <section class="section-container">
+        <header class="profile-header" data-animate="fade-in">
+            <div class="profile-info">
+                <div class="profile-text">
+                    <h1>Career Journey</h1>
+                    <p class="subtitle">Software Engineer & Researcher</p>
                 </div>
             </div>
+        </header>
 
-            <div class="experience-section">
+        <div class="career-grid" data-animate="fade-in">
+            <div class="career-card experience-card">
                 <h2>Work Experience</h2>
-                
-                <div class="experience-item">
-                    <h3>Software Engineer</h3>
-                    <p class="subtitle">Anthias Labs | Oct 2024 - Present</p>
-                    <ul>
-                        <li>Developed StakeHub, an on-chain oracle for Hyperliquid's Kinetiq protocol</li>
-                        <li>Implemented data streaming and storage through Supabase and HyperEVM integration</li>
-                    </ul>
-                </div>
+                <div class="experience-items">
+                    <div class="experience-item">
+                        <div class="company-logo-wrapper">
+                            <img src="images/anthias.png" alt="Anthias Labs">
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-header">
+                                <h3>Software Engineer</h3>
+                                <span class="duration">Oct 2024 - Present</span>
+                            </div>
+                            <p class="company">Anthias Labs</p>
+                            <ul>
+                                <li>Developed StakeHub, an on-chain oracle for Hyperliquid's Kinetiq protocol</li>
+                                <li>Implemented data streaming and storage through Supabase and HyperEVM integration</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                <div class="experience-item">
-                    <h3>Software Engineer & Research Assistant</h3>
-                    <p class="subtitle">Wesleyan University | Jan 2024 - Jun 2024</p>
-                    <ul>
-                        <li>Enhanced OpenWPM browser extension using Python, TypeScript, and SQL</li>
-                        <li>Awarded Research in Science Fellowship</li>
-                    </ul>
-                </div>
+                    <div class="experience-item">
+                        <div class="company-logo-wrapper">
+                            <img src="images/tech-privacy-lab.png" alt="Tech Privacy Lab">
+                        </div>
+                        <div class="experience-content">
+                            <h3>Software Engineer & Research Assistant</h3>
+                            <p class="company">Wesleyan University</p>
+                            <p class="duration">Jan 2024 - Jun 2024</p>
+                            <ul>
+                                <li>Enhanced OpenWPM browser extension using Python, TypeScript, and SQL</li>
+                                <li>Awarded Research in Science Fellowship</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                <div class="experience-item">
-                    <h3>Product Management Intern</h3>
-                    <p class="subtitle">Treehouse Finance | May 2023 - Aug 2023</p>
-                    <ul>
-                        <li>Supported product strategy development and roadmap building</li>
-                        <li>Developed Python code for data handling and ETL processes</li>
-                    </ul>
+                    <div class="experience-item">
+                        <div class="company-logo-wrapper">
+                            <img src="images/treehouse.png" alt="Treehouse Finance">
+                        </div>
+                        <div class="experience-content">
+                            <h3>Product Management Intern</h3>
+                            <p class="company">Treehouse Finance</p>
+                            <p class="duration">May 2023 - Aug 2023</p>
+                            <ul>
+                                <li>Supported product strategy development and roadmap building</li>
+                                <li>Developed Python code for data handling and ETL processes</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="skills-section">
-                <h2>Technical Skills</h2>
-                <p>Python, C, SML, OCaml, STATA, JavaScript, HTML, CSS, Bash, Git, SQL, Java</p>
+            <div class="career-card education-card">
+                <h2>Education</h2>
+                <div class="education-items">
+                    <div class="education-item">
+                        <h3>Dartmouth College</h3>
+                        <p class="degree">Bachelor of Engineering, Computer Engineering</p>
+                        <p class="details">GPA: 4.00/4.00 | Expected Mar 2027</p>
+                    </div>
+
+                    <div class="education-item">
+                        <h3>Wesleyan University</h3>
+                        <p class="degree">Bachelor of Arts, Computer Science & Mathematics</p>
+                        <p class="details">GPA: 4.00/4.00 | Expected May 2026</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

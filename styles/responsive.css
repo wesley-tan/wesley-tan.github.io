@@ -1,0 +1,162 @@
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  nav {
+    padding: var(--spacing-xs) var(--spacing-sm);
+    justify-content: flex-end;
+  }
+
+  nav ul {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: var(--text-color);
+    padding: var(--spacing-md);
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    z-index: 100;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: var(--spacing-sm);
+    color: var(--text-light);
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 101;
+  }
+
+  /* Header Adjustments */
+  .header-content {
+    padding: var(--spacing-sm);
+    width: 90%;
+  }
+  
+  .header-content h1 {
+    font-size: var(--font-size-xl);
+  }
+
+  /* Section Adjustments */
+  .section-container {
+    padding-top: calc(var(--spacing-xl) + 40px);
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+
+  .profile-header {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  .profile-text h1 {
+    font-size: var(--font-size-2xl);
+  }
+
+  .profile-text .subtitle {
+    font-size: var(--font-size-lg);
+  }
+
+  /* Grid Layouts */
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  /* Career Page */
+  .experience-section,
+  .education-section {
+    padding: var(--spacing-sm);
+  }
+
+  /* About Page */
+  .about-section .content,
+  .about-section .images {
+    flex-direction: column;
+  }
+
+  .image-wrapper {
+    width: 100%;
+    margin: var(--spacing-sm) 0;
+  }
+
+  /* Contact Page */
+  .contact-details {
+    flex-direction: column;
+    padding: var(--spacing-sm);
+  }
+
+  .about-container {
+    margin-top: 5rem;
+    padding: 0 1rem;
+  }
+  
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile-text h1 {
+    font-size: 2rem;
+  }
+  
+  .profile-text .subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+
+  .contact-section {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+  
+  .contact-info li {
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .contact-info a {
+    font-size: var(--font-size-base);
+  }
+
+  .company-logo {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .experience-item {
+    gap: var(--spacing-sm);
+  }
+
+  .section-container {
+    padding-top: calc(var(--spacing-xl) + 60px);
+  }
+
+  .card img {
+    width: 100px;
+  }
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-container {
+    padding: 9rem 1.5rem 1.5rem;
+  }
+} 

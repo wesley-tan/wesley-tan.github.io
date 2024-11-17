@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0F172A;
+    z-index: 100;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #F8FAFC;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 var(--spacing-lg);
+    margin-top: calc(var(--spacing-xl) + 2rem);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--overlay-dark);
+    z-index: 1;
+}
+
+.hero-section .header-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--text-light);
+    max-width: 800px;
+}
+
+/* ==========================================================================
+   Section Containers
+   ========================================================================== */
+.section-container {
+    padding-top: calc(var(--spacing-xl) + 60px);
+    max-width: var(--container-width);
+    margin: 0 auto;
+    width: 100%;
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
+}
+
+.section-container > * + * {
+    margin-top: var(--spacing-lg);
+}
+
+/* Content Layout */
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+}
+
+/* Grid Layouts */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    width: 100%;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: var(--spacing-md) var(--spacing-sm);
+    background: var(--text-color);
+    color: var(--text-light);
+    width: 100%;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--text-color);
+        padding: var(--spacing-md);
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .section-container {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+}
