@@ -344,20 +344,6 @@ nav ul li a {
 }
 
 /* ==========================================================================
-   Footer Component
-   ========================================================================== */
-footer {
-    margin-top: auto;
-    text-align: center;
-    padding: var(--spacing-lg) 0;
-    background: var(--nav-bg);
-    color: var(--white);
-    width: 100%;
-    position: relative;
-    border-top: 1px solid var(--border-color);
-}
-
-/* ==========================================================================
    Media Queries
    ========================================================================== */
 @media (max-width: 768px) {

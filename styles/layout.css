@@ -114,17 +114,6 @@ nav ul li a {
     width: 100%;
 }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-footer {
-    margin-top: auto;
-    text-align: center;
-    padding: var(--spacing-md) var(--spacing-sm);
-    background: var(--text-color);
-    color: var(--text-light);
-    width: 100%;
-}
 
 /* ==========================================================================
    Media Queries

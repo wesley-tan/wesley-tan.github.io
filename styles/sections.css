@@ -148,16 +148,42 @@
 footer {
     margin-top: auto;
     text-align: center;
-    padding: var(--spacing-md) var(--spacing-sm);
+    padding: var(--spacing-lg) var(--spacing-md);
     background: var(--nav-bg);
     color: var(--white);
     width: 100%;
+    position: relative;
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
     margin: 0;
-    color: var(--nav-text);
+    color: #FFFFFF !important;
     font-size: var(--font-size-base);
+    line-height: 1.5;
+}
+
+/* Ensure footer stays at bottom for short pages */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    footer {
+        padding: var(--spacing-md) var(--spacing-sm);
+    }
+    
+    footer p {
+        font-size: var(--font-size-sm);
+    }
 }
 
 .contact-section {
