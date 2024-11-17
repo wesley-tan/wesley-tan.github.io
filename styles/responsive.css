@@ -238,6 +238,35 @@
         margin-top: var(--spacing-md);
         padding: var(--spacing-sm);
     }
+
+    .expertise-section {
+        padding: var(--spacing-lg) 0;
+    }
+    
+    .expertise-category {
+        margin-bottom: var(--spacing-xl);
+    }
+    
+    .expertise-category h2 {
+        font-size: var(--font-size-xl);
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .expertise-tags {
+        gap: var(--spacing-sm);
+        margin: var(--spacing-md) 0;
+    }
+    
+    .tag {
+        padding: var(--spacing-xs) var(--spacing-sm);
+        font-size: var(--font-size-sm);
+    }
+    
+    .expertise-description {
+        margin-top: var(--spacing-lg);
+        padding: var(--spacing-md);
+        line-height: 1.6;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
