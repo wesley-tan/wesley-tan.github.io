@@ -690,3 +690,8 @@ nav ul li a {
     opacity: 0;
     animation: fadeInUp 0.8s ease-out 0.4s forwards;
 }
+
+nav ul li {
+    opacity: 1;
+    transform: translateY(0);
+}
